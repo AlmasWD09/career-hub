@@ -7,10 +7,10 @@ export const getJobsApplication = () =>{
     return jobsApply;
 }
 
-export const saveJobApplication = job =>{
+export const saveJobApplication = job =>{ // handle click thaka object  patitaci  (job para meter a first a array astaca second a  array of oi object ta astaca)
     const jobsApply = getJobsApplication();
     console.log(jobsApply);
-    const isExist = jobsApply.find(jobId=>jobId.id === job.id)
+    const isExist = jobsApply.find(jobId=>jobId.id === job.id) // aikha na shodo id dila hova na 
     if(isExist){
         return alert('alredy aca vhi')
     }
